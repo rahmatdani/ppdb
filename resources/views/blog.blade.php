@@ -1,7 +1,18 @@
 @extends('layout.main')
 
 @section('container')
-    <h1>{{ $title }}</h1>
+    <h1 class="text-center mb-3">{{ $title }}</h1>
+
+    <div class="row justify-content-center mb-3">
+        <div class="col-md-6">
+            <form action="/blog">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Cari" name="search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -48,4 +59,10 @@
 @else
     <p class="text-center fs-4">postingan tidak ada</p>
 @endif
+
+<div class="text-center">
+    {{ $posts->links() }}
+
+</div>
+
 @endsection

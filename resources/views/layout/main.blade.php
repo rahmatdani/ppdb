@@ -9,6 +9,9 @@
     {{-- <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
     <link href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
+    {{-- My costum style --}}
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+
     <title>Stelk | {{ $title }}</title>
   </head>
   <body>

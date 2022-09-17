@@ -20,13 +20,5 @@
         </div>
     </div>
 </div>
-    {{-- <article>
-        <h2>{{ $post->title }}</h2>
-        <h4>{{ $post->author->name }}</h4>
-        <p>By. {{ $post->author->name }} in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
-        </p>
-        {!! $post->body !!}
-        <br>
-        <a href="/blog">Kembali</a>
-    </article> --}}
+
 @endsection

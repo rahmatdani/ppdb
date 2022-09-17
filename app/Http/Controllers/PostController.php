@@ -14,7 +14,7 @@ class PostController extends Controller
             "title" => "All Post",
             "active" => "blog",
             // "posts" => Post::all()
-            "posts" => Post::latest()->get()
+            "posts" => Post::latest()->filter(request(['search']))->paginate(7)
         ]);
     }
 
@@ -28,6 +28,7 @@ class PostController extends Controller
             "image" => "dani.jpeg"
         ]);
     }
+
 
     public function show(Post $post)
     {
